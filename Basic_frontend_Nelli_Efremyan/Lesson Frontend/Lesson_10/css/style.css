@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    border: 1px solid gray;
+    border-radius: 20px;
+    width: 360px;
+    padding: 16px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Arial, Helvetica, sans-serif; /* смена шрифта текста */
+    position: relative;
+}
+
+.form_title {
+    width: 100%;
+    margin: 15px 0px;
+    padding-left: 15px;
+}
+
+.form_input {
+    width: 322px;
+    margin: 2px 0;
+    padding: 14px 18px;
+
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+}
+
+.form_input:focus { /* focus-псевдокласс, устанавливаем курсор */
+    outline: none;
+    border-color: #FFE44D;
+}
+
+.form_btn {
+    width: 100%;
+    margin: 2px 0;
+    border-radius: 55px;
+    padding: 14px 24px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form_info_text {
+    margin: 15px 0;
+    color: gray;
+    font-size: 13px;
+    padding-left: 0px;
+}
+
+.submit_btn {
+    background-color: #FFE44D;
+    border: 1px solid transparent;
+   
+}
+
+.redirect_btn {
+    background-color: white;
+    border: 1px solid #CFD8DC;
+}
+
+.form_cross {
+    font-size: 25px; /* Смена размера шрифта */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#to_login {
+    position: relative;
+    left: 110px;
+} 
+
+#tpassword_expiration_date {
+    position: relative;
+    right: 58px;
+    color: gray;
+    margin: 15px 0;
+    font-size: 13px;
+    
+}
+
+a {
+    text-decoration: none;
+}

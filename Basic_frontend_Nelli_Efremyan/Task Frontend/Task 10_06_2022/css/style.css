@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*съедает размер самого бокса, другими словами размер бокса не увеличивается на padding и border*/
+}
+
+.post {
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    transition: background-color 0.5s, /*анимированое закрашивание с задержкой 0,5сек*/
+                border-color 0.5s,
+                box-shadow 0.5s,
+                height 1.5s cubic-bezier(0.53, -0.44, 0.58, 1.41); /*сначала ввести easy, а потом в окне разработчика на сайте поменять значение кривой и скопировать данные и перенести в css*/
+                transition-delay: 0.5s; /*задержка изменения после наведения курсора*/
+    
+}
+
+.post:hover {/*post селектор*/
+    background-color: bisque;
+    height: 200px;
+    border-color: transparent; /*прозрачный цвет*/
+    box-shadow: 5px 5px 10px blue; /*тень справа, слева, толщина тени(переход от черного к белому) и цвет тени(по умолчанию ччерный, можно не указывать)*/
+}
+
+/* .post:hover p { hover - псевдокласс */
+    /* background-color: rgb(33, 128, 33); */  
+/* }  */

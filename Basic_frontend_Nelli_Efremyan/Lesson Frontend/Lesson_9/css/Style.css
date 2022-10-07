@@ -1,0 +1,6 @@
+.inputText:focus { /*Псевдокласс focus*/
+    outline: none;
+    border-color: red;
+    columns: blue;
+    background-color: purple;
+}

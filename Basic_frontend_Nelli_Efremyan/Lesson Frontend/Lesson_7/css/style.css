@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid black;
+    background-color: bisque;
+    width: 200px;
+    /*height: 250px*/
+    padding: 10px;
+    margin: 10px;
+}
+
+.progress_container {
+    position: relative; /* относительное позиционирвание*/
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.progress_line {
+    position: absolute;
+    height: 100%;
+    background-color: lightseagreen;
+   
+}
+
+.card1 {
+    width: 50%;
+}
+
+.card2 {
+    width: 20%;
+}
+
+
+.progress_value {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}

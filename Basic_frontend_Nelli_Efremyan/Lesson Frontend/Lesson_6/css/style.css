@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.div {
+    width: 100px;
+    height:  100px;
+    border: 1px  solid black;
+    margin: 10px;
+}
+
+.div1 {
+    background-color: pink;
+    position: relative;
+    /* left: 10px;
+    top: 50px;  */
+
+    /* z-index: 1 ; */
+}
+
+
+/* position: static - свойство по умолчанию, элемент не позиционирован
+
+position: relative - относительное позиционирование; элемент остается 
+в базовом потоке, но его можно двигать
+  top, bottom, left, rigth
+  top, left - приоритетные
+
+  z-index - меняет порядок отображения слоев; чем выше индекс, 
+  тем "ближе" элемент к нам; 0-999, может принимать отрицательные значения
+
+position: absolute - абсолютное позиционирование; элемент вырывается 
+из базового потока элементов. Применяются свойства top, bottom, left, rigth и z-index */
+
+
+
+
+.div2 {
+    background-color: green;
+    position: relative;
+    /* z-index: 0; */
+    /* position: absolute; */
+    /* left: 10px;
+    bottom: 50px; */
+
+}
+
+.div3 {
+    background-color: yellow;    
+    position: relative; /*  чтобы можно было двигать */
+    /* left: 20px; 
+    bottom: 100px; 
+    z-index: -1;  */
+}
+
+.div2_1 {
+    width: 30px;
+    height:  30px;
+    border: 1px  solid black;
+    background-color: bisque;
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    /* right: 30px; */
+}
+
+.div2_2 {
+    width: 30px;
+    height:  30px;
+    border: 1px  solid black;
+    background-color: violet;
+
+    position: absolute;
+    top: 69px;
+    left: 69px;
+}
+
+.div3_1 {
+    width: 30px;
+    height:  30px;
+    border: 1px  solid black;
+    background-color: rgb(212, 113, 27);
+
+    position: absolute;
+    top: 33px;
+    left: 33px;
+}

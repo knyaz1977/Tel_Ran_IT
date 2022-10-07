@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.grid_container {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr);/*1fr 1fr 1fr; repeat(3, 1fr) repeat(3, 2fr);/*2fr 1fr 1fr 2fr; fr -  */
+    /* единицы измерения для гредов. создает колонки. значения(100px 100px 100px) для размера и колличества колонок */ 
+    /* grid-template-rows: 50% 50%; */
+    /* 1 fr - единица измерения назыыаются фракция */
+    /* grid-column-gap: 5px; отступ между колонками */
+    /*grid-template-columns:1fr 2fr;
+    grid-template-columns:2fr 1fr; */
+    /* grid-row-gap: 5px; отсутп между строками */
+    /* grid-gap: 5px;отсутп и между строками и колонками */
+    
+    /* grid-template-rows: 1fr;1fr 2fr 1fr; по порядку отрабатывает по строкам */
+        /* template - сетка */
+    grid-template: 1fr / repeat(3, 1fr); /*сокращенная запись для строк и колонок*/
+    justify-items: start;
+    align-items: end;
+    /* grid-auto-rows: 4fr; */
+
+    /*элементы не попавшие в явную сетку называются не явной сеткой, остальные - явная сетка*/    
+}
+
+/* repeat(3, 1fr) repeat(2, 2fr) repeat(1, 3fr) = 1fr 1fr 1fr 2fr 2fr 3 fr */
+
+.grid_item {
+    border: 1px dashed black;
+    padding: 20px;
+    text-align: center;
+}   
+
+.item_1 {
+    justify-self: stretch;
+    /* background-color: yellow;
+    grid-column:  1 / span 2;
+    grid-row: 1 / span 2;*/
+
+} 
+.item_5 {
+    justify-self: center;
+}
+
+/* Что осталось:
+    1. justify-content / align-content - выравнивние сетки
+    2. grid-colum / grid-row - расположение элементов внутри сетки
+*/
+
+
+/*=========================================*/
+
+.grid_container2 {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-areas: 
+        'header header header'
+        'sidebar content sidebar2'
+        'footer footer footer';
+
+        grid-template:
+        [start] 'header header' 100px [row2]
+        [row2] 'sidebar content' 300px  [row3]
+        [row3] 'footer footer' 100px [row-end] / 150px 4fr;
+}
+
+.header,
+.sidebar,
+.content,
+.footer{
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}

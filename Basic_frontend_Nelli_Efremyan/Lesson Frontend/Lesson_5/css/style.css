@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    text-align: center; /* выровнили по ширине */
+    line-height: 70px; /* выровнили по высоте */
+    margin: 10px; /*отступ внешний*/
+}
+
+.block1 {
+    display: flex;
+    /* flex-direction: row-reverse; /* row горизонтальная ось, rewers - развернуть*/
+    flex-direction: row; /*писать не нужно по умолчани.*/
+    justify-content: space-around;
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row; /*задает направление основной оси*/
+    /* justify-content: end; /*выравнивание элементов по горизонтальной оси*/
+    justify-content: space-between;
+}
+
+/* 
+
+flex-direction - выбор направления основной оси
+justify-content - выравнивание элементов вдоль основной оси
+align-items - выравнивание перпендикулярно основной оси
+flex-wrap - перенос элементов на следующую строку
+
+*/

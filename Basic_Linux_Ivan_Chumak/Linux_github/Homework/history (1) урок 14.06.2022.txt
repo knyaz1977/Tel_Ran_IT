@@ -1,0 +1,57 @@
+   0 df -h
+   1 ls
+   2 nano script.sh
+   3 cat /etc/os-release
+   4 nano
+   5 ls
+   6 nano
+   7 ls
+   8 nano /script.sh
+   9 nano script.sh
+  10 ls
+  11 ls -l
+  12 tree
+  13 ls -l
+  14 chmod u+x script.sh 
+  15 ls -l
+  16 cat script.sh 
+  17 chmod 744
+  18 chmod 744 script.sh 
+  19 ls -l
+  20 cat script.sh 
+  21 script.sh
+  22 ./script.sh 
+  23 env
+  24 pwd
+  25 /root/script.sh 
+  26 script.sh
+  27 mv script.sh /bin
+  28 ls
+  29 script.sh
+  30 tree
+  31 bash script.sh
+  32 nano /bin
+  33 nano /bin/script.sh
+  34 pwd
+  35 /root/script.sh
+  36 bash script.sh
+  37 ./script.sh
+  38 ls
+  39 tree
+  40 nano script.sh
+  41 nano /bin/script.sh
+  42 bush script.sh
+  43 bash script.sh
+  44 nano /bin/script.sh
+  45 bash script.sh
+  46 history
+  47 export_file /tmp/history.txt
+  48 mkdir tmp
+  49 export_file /tmp/history.txt
+  50 mkdir/tmp
+  51 mkdir /tmp
+  52 tree
+  53 history
+  54 export?file /tmp/history.txt
+  55 history
+  56 history > /tmp/history.txt

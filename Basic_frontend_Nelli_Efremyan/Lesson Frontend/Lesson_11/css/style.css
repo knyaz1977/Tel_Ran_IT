@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    font-size: 24px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 640px) /*and (min-width: 300px)*/ { /*два условия должны выполняться*/
+    .text {
+        width: 290px;
+        /* height: 844Px; */
+        color: red;
+        border-color: red;
+    }
+    .greeting {
+
+    }
+    
+}
+/* @media */
+
+@media print {
+    .text {
+        color: green;
+
+    }
+}
+
+/* 
+Условия:
+1. Тип носителя (screeen, print  и т.д.)
+2. Логический оператор (and, ',', not)
+3. Медиа-функция (max-width, min-width и т.д.)
+ */

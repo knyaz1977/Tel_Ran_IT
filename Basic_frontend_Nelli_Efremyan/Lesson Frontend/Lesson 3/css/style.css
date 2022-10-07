@@ -1,0 +1,18 @@
+.pic1 {
+    width: 300px;
+}
+.pic2 {
+        height: 360px;
+}
+.pic3 {
+    width: auto;
+}
+b {
+    color: blueviolet;
+}
+h1 {
+    color: rgb(30, 193, 35);
+}
+ol li {
+    list-style-type: lower-alpha;
+} 

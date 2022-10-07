@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    height: 400px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main img{
+    width: 50%;
+    object-fit: cover; /*меняет картину не деформируя ее*/
+}
+
+.main .text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .text p {
+    text-align: justify;
+    width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main img, .main .text {
+        width: 100%;
+        max-height: 300px;
+    }
+    .main .text p{
+       margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main .text p{
+        margin: 50px 20px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .main {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 50px;
+}
+
+@media screen and (max-width: 800px){ /*указывает на условие, в данном случае ширина экрана, выполняются условия ниже*/
+    /* .main {
+        background-color: brown;
+    }
+    
+}
+
+@media screen and (max-width: 500px){ 
+    .main {
+        background-color: greenyellow;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 300px){ 
+    .main {
+        background-color: gainsboro;
+        height: 600px;
+    }
+    
+} */ 

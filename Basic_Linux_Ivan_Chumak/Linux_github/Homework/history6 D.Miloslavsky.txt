@@ -1,0 +1,46 @@
+ First level:
+
+   0 nano sleeper.sh
+
+     #!/bin/bash
+     for run in {1..10}
+     do
+     date +"%H:%M:%S"
+     echo $run
+     sleep 5
+     done 
+
+   1 chmod 744 sleeper.sh
+   2 cat sleeper.sh
+   3 ./sleeper.sh
+   4 nano sleeper.sh
+
+     #!/bin/bash
+     for run in {1..10}
+     do
+     date +"%H:%M:%S"
+     echo $run
+     sleep 0.5
+     done
+
+   5 cat sleeper.sh
+   6 ./sleeper.sh
+   7 cat /etc/os-release
+   8 localhost:~# cat /etc/os-release | head -1
+   9 localhost:~# cat /etc/os-release | head -1 >> /root/sleeper.sh
+   10 cat sleeper.sh
+
+      #!/bin/bash
+      for run in {1..10}
+      do
+      date +"%H:%M:%S"
+      echo $run
+      sleep 0.5
+      done
+      NAME="Alpine Linux"
+
+   11 history
+   12 history >/tmp/history.txt
+   13 export_file /tmp/history.txt
+
+

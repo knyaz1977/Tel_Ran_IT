@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Table</p>
+    
+   <table>
+       <caption>Table1</caption>
+            <thead> <!-- thead - шапка -->
+                <tr>
+                    <th>Шапка1</th> <!-- th ячейка в шапке выделяет жирным-->
+                    <th>Шапка2</th>
+                    <th>Шапка3</th>
+                    <th>Шапка4</th>
+                </tr>
+            </thead>
+
+       <!-- table>tr*3>td*4 для создания автоматически столбцов и строк -->
+
+       <tbody> <!-- tbody - тело таблицы -->
+            <tr>  <!-- tr столбцы -->
+                <td rowspan="2">Lesson1</td> <!-- td строки --><!-- rowspan -  -->
+                <td>Lesson2</td>
+                <td>Lesson3</td>
+                <td>Lesson4</td>
+            </tr>
+    
+            <tr>
+                 <!-- td строки -->
+                <td colspan="2">Lesson2</td>
+                <td>Lesson3</td>
+                
+            </tr>
+    
+            <tr>
+                <td>Lesson1</td> <!-- td строки -->
+                <td>Lesson2</td>
+                <td>Lesson3</td>
+                <td>Lesson4</td>
+            </tr>
+       </tbody>
+       
+   </table>
+
+
+    <table border="1" cellspacing="0" cellpadding="5"> <!-- border добавляет таблицу, cellspacing - определяет отступ линий, cellpadding - отступ от текста до краев ячейки -->
+
+        <tr>
+           <td><img src="https://th.bing.com/th/id/R.073bae291696efdba625c50e0da2ec82?rik=ySYTDCQSq8F%2fsw&riu=http%3a%2f%2fwww.world-globe.ru%2ffiles%2fflags%2fgermany_l.png&ehk=JY9KHfn02WgeEk8DkOlgfJYm2lv4QKAP2aU2PqhVtg8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="флаг германии" class="img1""></td>
+           <td>Ячейка2</td>
+           <td>Ячейка3</td>
+           <td>Ячейка4</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://th.bing.com/th/id/OIP.EXf7XRnEAkibQpFQBuTduQHaE7?pid=ImgDet&rs=1" alt="флаг евросоюза" width="70px"></td>
+            <td>Ячейка2</td>
+            <td>Ячейка3</td>
+            <td>Ячейка4</td>
+        </tr>
+    </table>    
+    
+</body>
+</html>

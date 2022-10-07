@@ -1,0 +1,21 @@
+SELECT 
+	EmployeeID,
+    Count(*) as orders_count
+FROM Orders
+Group by EmployeeID
+order by orders_count desc;
+
+SELECT 
+	Country,
+    Count(*) as total_customers
+FROM Customers
+Group by Country
+having total_customers >= 7
+order by total_customers desc;
+
+SELECT Country,
+		COUNT(*) AS total_customers
+FROM Customers
+GROUP BY Country
+HAVING total_customers >= 7
+ORDER BY total_customers DESC

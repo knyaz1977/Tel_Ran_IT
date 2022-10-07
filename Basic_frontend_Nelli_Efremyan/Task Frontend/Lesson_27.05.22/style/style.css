@@ -1,0 +1,20 @@
+#main p {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#main .about {
+    text-align: center;
+    background-color: rgb(93, 134, 165);
+}
+#main .lesson {
+    text-align: center;
+    background-color: aqua;
+}
+#main .link {
+    text-align: center;
+}
+#schedule ul{
+    list-style-type:georgian;
+}
+//создать нумерованный список с ссылками на 5 своих любимых фильмов

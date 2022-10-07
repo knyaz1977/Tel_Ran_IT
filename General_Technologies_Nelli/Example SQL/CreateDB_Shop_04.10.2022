@@ -1,0 +1,81 @@
+-- -- Создать БД Shop
+-- Создать 2 таблицы и наполнить данными
+-- goods (id первичный ключ авто инкремент, title varchar(128), quantity 0-10)
+-- и goods_1 (id первичный ключ авто инкремент, title varchar(128), price int, quantity 0-10)
+
+-- Данные для таблицы goods:
+-- Bike, 4
+-- Skis, 5
+-- Skates, 7
+-- Skate, 2
+
+-- Данные для таблицы goods_1:
+-- Bike, 12000, 4
+-- Skis, 10000, 5
+-- Skates, 6000, 7
+-- Skate,  2000, 2
+
+-- QUANTITY integer check(quantity between 0 and 10)
+
+
+CREATE DATABASE Shop;
+SHOW DATABASES;
+show table 
+
+use Shop;
+
+CREATE table goods(
+	id integer primary key auto_increment,
+    title varchar(128) NOT NULL,
+	quantity integer check(quantity between 0 and 10)
+);
+CREATE table goods_1(
+	id integer primary key auto_increment,
+    title varchar(128) NOT NULL,
+    price int,
+	quantity integer check(quantity between 0 and 10)
+);
+
+INSERT INTO goods(title, quantity) values ('Bike', 4), 
+											('Skis', 5),
+											('Skates', 7),
+											('Skate', 2);
+                                            
+INSERT INTO goods_1(title, price, quantity) values ('Bike', 12000, 4), 
+											('Skis', 10000, 5),
+											('Skates', 6000, 7),
+											('Skate', 2000, 2);
+
+select * from goods;
+select * from goods_1;
+
+-- объединить данные из goods и goods_1 (все записи, без price)
+
+select
+	id,
+    title,
+    quantity
+ from goods
+ UNION 
+ SELECT 
+    id,
+    title,
+    quantity
+from goods_1;	
+
+select
+	id,
+    title,
+    quantity
+ from goods
+ UNION all
+ SELECT 
+    id,
+    title,
+    quantity
+from goods_1;	
+
+-- объединить данные из goods и goods_1, указав price, где это возможно
+
+
+

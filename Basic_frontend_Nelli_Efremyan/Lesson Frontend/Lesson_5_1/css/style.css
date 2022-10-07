@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    text-align: center; /* выровнили по ширине */
+    line-height: 70px; /* выровнили по высоте */
+    margin: 10px; /*отступ внешний*/
+}
+
+.block1 {
+    /*height: 300px;*/
+    display: flex;
+    flex-wrap: nowrap; /*не переносить элементы при изменении размера экрана*/
+    /*flex-direction: column;
+    align-items: end;*/
+} 
+
+.block2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item_fixed {
+    min-width: 70px;
+}
+/* 
+
+flex-direction - выбор направления основной оси
+justify-content - выравнивание элементов вдоль основной оси
+align-items - выравнивание перпендикулярно основной оси
+flex-wrap - перенос элементов на следующую строку
+
+*/

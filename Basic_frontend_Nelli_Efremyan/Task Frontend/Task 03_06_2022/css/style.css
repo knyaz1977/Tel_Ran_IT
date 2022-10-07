@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*как элементы распологаются по вертикали*/
+    padding: 0 40px;
+    height: 60px;
+    background-color: bisque;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+nav .logo img{
+    width: 100px;
+}
